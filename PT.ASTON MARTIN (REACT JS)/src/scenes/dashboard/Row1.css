@@ -1,0 +1,68 @@
+/* CSS for Row1 component */
+.row-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.dashboard-box {
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box-header {
+  background-color: #000000;
+  padding: 10px;
+  border-bottom: 1px solid #000000;
+}
+
+.box-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #ffffff; /* White text color */
+}
+
+.box-header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #ffffff; /* White text color */
+}
+
+.responsive-container {
+  height: 100%;
+}
+
+/* Styling for spider chart */
+.spider-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.spider-chart-container svg {
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spider-chart-container circle {
+  cursor: pointer;
+}
+
+.spider-chart-container text {
+  font-size: 12px;
+  fill: #000000; /* Black text color */
+}
+
+@media (max-width: 768px) {
+  .row-container {
+    grid-template-columns: 1fr; /* Single column layout on smaller screens */
+  }
+}
